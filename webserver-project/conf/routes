@@ -1,1 +1,4 @@
-GET /helloworld     controllers.HelloWorldController.helloworld
+GET /helloworld    controllers.HelloWorldController.helloworld
+GET /async-hello   controllers.AsyncHelloWorldController.delayedHello(delay: Int ?= 500)
+GET /scores        controllers.HelloWorldController.latestScores()
+GET /latest-scores        controllers.AsyncHelloWorldController.latestScores()
